@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-08-06T21:31:15.750</Modified>
+      <Modified>2023-08-14T20:48:20.993</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-08-06T21:27:05.348</Modified>
+      <Modified>2023-08-13T23:44:17.363</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.runtimeconfig.json">
       <PackagePath>grid 8x8 3.runtimeconfig.json</PackagePath>
@@ -44,11 +44,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.dll">
       <PackagePath>grid 8x8 3.dll</PackagePath>
-      <Modified>2023-08-06T21:31:12.605</Modified>
+      <Modified>2023-08-14T20:48:18.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bbishop.png">
+      <PackagePath>Resources\Images\bbishop.png</PackagePath>
+      <Modified>2023-07-09T18:45:09.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bking.png">
+      <PackagePath>Resources\Images\bking.png</PackagePath>
+      <Modified>2023-07-09T18:45:14.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bknight.png">
+      <PackagePath>Resources\Images\bknight.png</PackagePath>
+      <Modified>2023-07-09T18:45:23.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bpawn.png">
+      <PackagePath>Resources\Images\bpawn.png</PackagePath>
+      <Modified>2023-07-09T18:45:33.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bqueen.png">
+      <PackagePath>Resources\Images\bqueen.png</PackagePath>
+      <Modified>2023-07-09T18:45:57.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\brook.png">
+      <PackagePath>Resources\Images\brook.png</PackagePath>
+      <Modified>2023-07-09T18:46:02.627</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wbishop.png">
+      <PackagePath>Resources\Images\wbishop.png</PackagePath>
+      <Modified>2023-07-09T18:44:28.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wking.png">
+      <PackagePath>Resources\Images\wking.png</PackagePath>
+      <Modified>2023-07-09T18:45:18.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wknight.png">
+      <PackagePath>Resources\Images\wknight.png</PackagePath>
+      <Modified>2023-07-09T18:45:29.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wpawn.png">
+      <PackagePath>Resources\Images\wpawn.png</PackagePath>
+      <Modified>2023-07-09T18:45:39.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wqueen.png">
+      <PackagePath>Resources\Images\wqueen.png</PackagePath>
+      <Modified>2023-07-09T18:45:52.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wrook.png">
+      <PackagePath>Resources\Images\wrook.png</PackagePath>
+      <Modified>2023-07-09T18:46:07.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>grid 8x8 3.exe</PackagePath>
-      <Modified>2023-08-06T21:31:12.621</Modified>
+      <Modified>2023-08-14T20:48:18.325</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -920,7 +968,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.deps.json">
       <PackagePath>grid 8x8 3.deps.json</PackagePath>
-      <Modified>2023-08-06T21:31:15.375</Modified>
+      <Modified>2023-08-14T20:48:20.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -968,207 +1016,255 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-07-16T15:49:48.891</Modified>
+      <Modified>2023-08-13T23:38:55.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.326</Modified>
+      <Modified>2023-08-13T23:38:56.133</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.347</Modified>
+      <Modified>2023-08-13T23:38:56.155</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.368</Modified>
+      <Modified>2023-08-13T23:38:56.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.403</Modified>
+      <Modified>2023-08-13T23:38:56.222</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.542</Modified>
+      <Modified>2023-08-13T23:38:56.369</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.010</Modified>
+      <Modified>2023-08-13T23:38:55.788</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.015</Modified>
+      <Modified>2023-08-13T23:38:55.792</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.038</Modified>
+      <Modified>2023-08-13T23:38:55.815</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.020</Modified>
+      <Modified>2023-08-13T23:38:55.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.026</Modified>
+      <Modified>2023-08-13T23:38:55.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.978</Modified>
+      <Modified>2023-08-13T23:38:55.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.982</Modified>
+      <Modified>2023-08-13T23:38:55.763</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.004</Modified>
+      <Modified>2023-08-13T23:38:55.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.986</Modified>
+      <Modified>2023-08-13T23:38:55.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.992</Modified>
+      <Modified>2023-08-13T23:38:55.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.908</Modified>
+      <Modified>2023-08-13T23:38:55.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.912</Modified>
+      <Modified>2023-08-13T23:38:55.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.917</Modified>
+      <Modified>2023-08-13T23:38:55.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.924</Modified>
+      <Modified>2023-08-13T23:38:55.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.932</Modified>
+      <Modified>2023-08-13T23:38:55.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.938</Modified>
+      <Modified>2023-08-13T23:38:55.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.943</Modified>
+      <Modified>2023-08-13T23:38:55.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.972</Modified>
+      <Modified>2023-08-13T23:38:55.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.948</Modified>
+      <Modified>2023-08-13T23:38:55.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.960</Modified>
+      <Modified>2023-08-13T23:38:55.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.116</Modified>
+      <Modified>2023-08-13T23:38:55.906</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.126</Modified>
+      <Modified>2023-08-13T23:38:55.916</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.137</Modified>
+      <Modified>2023-08-13T23:38:55.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.153</Modified>
+      <Modified>2023-08-13T23:38:55.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.185</Modified>
+      <Modified>2023-08-13T23:38:55.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.074</Modified>
+      <Modified>2023-08-13T23:38:55.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.080</Modified>
+      <Modified>2023-08-13T23:38:55.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.087</Modified>
+      <Modified>2023-08-13T23:38:55.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.094</Modified>
+      <Modified>2023-08-13T23:38:55.876</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.108</Modified>
+      <Modified>2023-08-13T23:38:55.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.043</Modified>
+      <Modified>2023-08-13T23:38:55.823</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.048</Modified>
+      <Modified>2023-08-13T23:38:55.827</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.053</Modified>
+      <Modified>2023-08-13T23:38:55.832</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.059</Modified>
+      <Modified>2023-08-13T23:38:55.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.068</Modified>
+      <Modified>2023-08-13T23:38:55.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.195</Modified>
+      <Modified>2023-08-13T23:38:55.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.206</Modified>
+      <Modified>2023-08-13T23:38:56.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.221</Modified>
+      <Modified>2023-08-13T23:38:56.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.245</Modified>
+      <Modified>2023-08-13T23:38:56.049</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.310</Modified>
+      <Modified>2023-08-13T23:38:56.117</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bbishop.scale-100.png">
+      <PackagePath>bbishop.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:09.389</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bking.scale-100.png">
+      <PackagePath>bking.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:14.343</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bknight.scale-100.png">
+      <PackagePath>bknight.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:23.147</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bpawn.scale-100.png">
+      <PackagePath>bpawn.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:33.375</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bqueen.scale-100.png">
+      <PackagePath>bqueen.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:57.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\brook.scale-100.png">
+      <PackagePath>brook.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:46:02.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-07-16T15:49:48.983</Modified>
+      <Modified>2023-08-12T20:50:41.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.001</Modified>
+      <Modified>2023-08-12T20:50:41.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.022</Modified>
+      <Modified>2023-08-12T20:50:41.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.055</Modified>
+      <Modified>2023-08-12T20:50:41.890</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-07-16T15:49:49.142</Modified>
+      <Modified>2023-08-12T20:50:41.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wbishop.scale-100.png">
+      <PackagePath>wbishop.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:44:28.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wking.scale-100.png">
+      <PackagePath>wking.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:18.195</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wknight.scale-100.png">
+      <PackagePath>wknight.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:29.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wpawn.scale-100.png">
+      <PackagePath>wpawn.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:39.285</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wqueen.scale-100.png">
+      <PackagePath>wqueen.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:45:52.642</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wrook.scale-100.png">
+      <PackagePath>wrook.scale-100.png</PackagePath>
+      <Modified>2023-07-09T18:46:07.510</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

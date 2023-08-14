@@ -34,6 +34,42 @@
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.dll">
       <PackagePath>grid 8x8 3.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bbishop.png">
+      <PackagePath>Resources\Images\bbishop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bking.png">
+      <PackagePath>Resources\Images\bking.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bknight.png">
+      <PackagePath>Resources\Images\bknight.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bpawn.png">
+      <PackagePath>Resources\Images\bpawn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bqueen.png">
+      <PackagePath>Resources\Images\bqueen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\brook.png">
+      <PackagePath>Resources\Images\brook.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wbishop.png">
+      <PackagePath>Resources\Images\wbishop.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wking.png">
+      <PackagePath>Resources\Images\wking.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wknight.png">
+      <PackagePath>Resources\Images\wknight.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wpawn.png">
+      <PackagePath>Resources\Images\wpawn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wqueen.png">
+      <PackagePath>Resources\Images\wqueen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\wrook.png">
+      <PackagePath>Resources\Images\wrook.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>grid 8x8 3.exe</PackagePath>
     </AppxPackagedFile>
@@ -862,6 +898,24 @@
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bbishop.scale-100.png">
+      <PackagePath>bbishop.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bking.scale-100.png">
+      <PackagePath>bking.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bknight.scale-100.png">
+      <PackagePath>bknight.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bpawn.scale-100.png">
+      <PackagePath>bpawn.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\bqueen.scale-100.png">
+      <PackagePath>bqueen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\brook.scale-100.png">
+      <PackagePath>brook.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -876,6 +930,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wbishop.scale-100.png">
+      <PackagePath>wbishop.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wking.scale-100.png">
+      <PackagePath>wking.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wknight.scale-100.png">
+      <PackagePath>wknight.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wpawn.scale-100.png">
+      <PackagePath>wpawn.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wqueen.scale-100.png">
+      <PackagePath>wqueen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\wrook.scale-100.png">
+      <PackagePath>wrook.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

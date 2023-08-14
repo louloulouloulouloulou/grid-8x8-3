@@ -49,7 +49,61 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\bbishop.png" />
+	  <MauiImage Remove="Resources\Images\bking.png" />
+	  <MauiImage Remove="Resources\Images\bknight.png" />
+	  <MauiImage Remove="Resources\Images\bpawn.png" />
+	  <MauiImage Remove="Resources\Images\bqueen.png" />
+	  <MauiImage Remove="Resources\Images\brook.png" />
+	  <MauiImage Remove="Resources\Images\wbishop.png" />
+	  <MauiImage Remove="Resources\Images\wking.png" />
+	  <MauiImage Remove="Resources\Images\wknight.png" />
+	  <MauiImage Remove="Resources\Images\wpawn.png" />
+	  <MauiImage Remove="Resources\Images\wqueen.png" />
+	  <MauiImage Remove="Resources\Images\wrook.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Resources\Images\bbishop.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\bking.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\bknight.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\bpawn.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\bqueen.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\brook.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wbishop.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wking.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wknight.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wpawn.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wqueen.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="Resources\Images\wrook.png">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 </Project>
