@@ -20,67 +20,56 @@ namespace grid_8x8_3
         {
             List<Movess> Moves = new List<Movess>(); // list for the moves of the pawns
 
-            for (int i = -8; i < 9; i++)
+            Loop(array, -1, -1);
+            Loop(array, -1, 1);
+            Loop(array, 1, -1);
+            Loop(array, 1, 1);
+            
+            return Moves;
+        }
+        public void Loop(Mothaclass[,] array, int x, int y)
+        {
+            List<Movess> Moves = new List<Movess>(); // list for the moves of the pawns
+
+            for (int i = 0; i < 8; i++)
             {
-                int z = i*i;
-                if (z > 0)
+                for (int j = 0; j <8; j++)
                 {
+                    i *= x;
+                    j *= y;
+
                     if (IsInArray(position.x + i, position.y + i))
                     {
                         if (array[position.x + i, position.y + i] == null)
                         {
-                            Moves.Add(new Movess(new Position(position.x, position.y),
-                                new Position(position.x + i, position.y + i), Mtype.Regular));
-                        }
-                        //capture
-                        if (colour == Colour.White || colour == Colour.Black)
-                        {
-                            if (array[position.x + i, position.y + i] != null)
+                            if (array[position.x + i, position.y + i] == null)
                             {
-                                if (array[position.x + i, position.y + i].colour == colour)
-                                {
-                                    break;
-                                }
-                                else if (array[position.x + i, position.y + i].colour != colour)
-                                {
-                                    Moves.Add(new Movess(new Position(position.x, position.y),
-                                    new Position(position.x + i, position.y + i), Mtype.Take));
-                                }
+                                Moves.Add(new Movess(new Position(position.x, position.y),
+                                    new Position(position.x + i, position.y + i), Mtype.Regular));
                             }
-                        }
-                    }
-                }
-                else if (z < 0)
-                {
-                    if (IsInArray(position.x - i, position.y - i))
-                    {
-                        if (array[position.x - i, position.y - i] == null)
-                        {
-                            Moves.Add(new Movess(new Position(position.x, position.y),
-                                new Position(position.x - i, position.y - i), Mtype.Regular));
-                        }
 
-                        //capture
-                        if (colour == Colour.White || colour == Colour.Black)
-                        {
-                            if (array[position.x - i, position.y - i] != null)
+                            //capture
+                            else if (colour == Colour.White || colour == Colour.Black)
                             {
-                                if (array[position.x - i, position.y - i].colour == colour)
+                                if (array[position.x + i, position.y + i] != null)
                                 {
-                                    break;
-                                }
-                                else if (array[position.x - i, position.y - i].colour != colour)
-                                {
-                                    Moves.Add(new Movess(new Position(position.x, position.y),
-                                    new Position(position.x - i, position.y - i), Mtype.Take));
+                                    
+                                    if (array[position.x + i, position.y + i].colour == colour)
+                                    {
+                                        break;
+                                    }
+                                    
+                                    if (array[position.x - i, position.y + i].colour != colour)
+                                    {
+                                        Moves.Add(new Movess(new Position(position.x, position.y),
+                                        new Position(position.x - i, position.y + i), Mtype.Take));
+                                    }
                                 }
                             }
                         }
                     }
                 }
-       
             }
-            return Moves;
         }
     }
 }
