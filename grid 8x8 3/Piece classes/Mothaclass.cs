@@ -16,7 +16,7 @@ namespace grid_8x8_3.Piece_classes
         {
             this.colour = colour;
             this.position = position;
-
+            Moves = new List<Movess>();
         }
         public virtual List<Movess> Move(Mothaclass[,] array) // move
         {

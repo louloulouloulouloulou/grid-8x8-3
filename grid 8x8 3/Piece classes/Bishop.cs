@@ -1,10 +1,6 @@
 ﻿
 using grid_8x8_3.Piece_classes;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace grid_8x8_3
 {
@@ -14,62 +10,64 @@ namespace grid_8x8_3
         {
             this.colour = colour;
             this.position = position;
+            
+
         }
 
         public override List<Movess> Move(Mothaclass[,] array)
         {
-            List<Movess> Moves = new List<Movess>(); // list for the moves of the pawns
 
-            Loop(array, -1, -1);
-            Loop(array, -1, 1);
-            Loop(array, 1, -1);
-            Loop(array, 1, 1);
+            Moves.AddRange(Loop(array, -1, -1));
+            Moves.AddRange(Loop(array, -1, 1));
+            Moves.AddRange(Loop(array, 1, -1));
+            Moves.AddRange(Loop(array, 1, 1));
             
             return Moves;
         }
-        public void Loop(Mothaclass[,] array, int x, int y)
+        public List<Movess> Loop(Mothaclass[,] array, int x, int y)
         {
-            List<Movess> Moves = new List<Movess>(); // list for the moves of the pawns
 
             for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j <8; j++)
                 {
-                    i *= x;
-                    j *= y;
+                    int a = i * x;
+                    int b = j * y;
 
-                    if (IsInArray(position.x + i, position.y + i))
+                    if (Math.Pow(a, 2) == Math.Abs(a * b))
                     {
-                        if (array[position.x + i, position.y + i] == null)
+                        if (IsInArray(position.x + a, position.y + b))
                         {
-                            if (array[position.x + i, position.y + i] == null)
+                            if (array[position.x + a, position.y + b] == null)
                             {
                                 Moves.Add(new Movess(new Position(position.x, position.y),
-                                    new Position(position.x + i, position.y + i), Mtype.Regular));
-                            }
+                                new Position(position.x + a, position.y + b), Mtype.Regular));
 
+                            }
                             //capture
-                            else if (colour == Colour.White || colour == Colour.Black)
+
+                            if (array[position.x + a, position.y + b] != null)
                             {
-                                if (array[position.x + i, position.y + i] != null)
+
+                                if (array[position.x + a, position.y + b].colour == colour)
                                 {
-                                    
-                                    if (array[position.x + i, position.y + i].colour == colour)
-                                    {
-                                        break;
-                                    }
-                                    
-                                    if (array[position.x - i, position.y + i].colour != colour)
-                                    {
-                                        Moves.Add(new Movess(new Position(position.x, position.y),
-                                        new Position(position.x - i, position.y + i), Mtype.Take));
-                                    }
+                                    break;
+                                }
+
+                                if (array[position.x + a, position.y + b].colour != colour)
+                                {
+                                    Moves.Add(new Movess(new Position(position.x, position.y),
+                                    new Position(position.x + a, position.y + b), Mtype.Take));
                                 }
                             }
+
                         }
                     }
                 }
             }
+            return Moves;
+            
         }
     }
 }
+
