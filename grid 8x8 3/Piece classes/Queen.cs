@@ -17,7 +17,10 @@ namespace grid_8x8_3
             Bishop bishop = new Bishop(colour, new Position(position.x,position.y));
             Rook rook = new Rook(colour, new Position(position.x, position.y));
 
-            Moves.AddRange(bishop.Move(array).Concat(rook.Move(array)));
+            if (colour == bishop.colour && colour == rook.colour)
+            {
+                Moves.AddRange(bishop.Move(array).Concat(rook.Move(array)));
+            }
             
             return Moves;
         }

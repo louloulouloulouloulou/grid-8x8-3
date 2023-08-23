@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-08-16T15:55:47.140</Modified>
+      <Modified>2023-08-23T18:45:25.752</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-08-16T15:36:35.117</Modified>
+      <Modified>2023-08-23T18:45:24.639</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.runtimeconfig.json">
       <PackagePath>grid 8x8 3.runtimeconfig.json</PackagePath>
@@ -44,7 +44,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.dll">
       <PackagePath>grid 8x8 3.dll</PackagePath>
-      <Modified>2023-08-16T15:53:10.687</Modified>
+      <Modified>2023-08-23T18:45:22.301</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\Resources\Images\bbishop.png">
       <PackagePath>Resources\Images\bbishop.png</PackagePath>
@@ -96,7 +96,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>grid 8x8 3.exe</PackagePath>
-      <Modified>2023-08-16T15:53:10.816</Modified>
+      <Modified>2023-08-23T18:45:22.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.7\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -968,7 +968,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\grid 8x8 3.deps.json">
       <PackagePath>grid 8x8 3.deps.json</PackagePath>
-      <Modified>2023-08-16T15:55:46.761</Modified>
+      <Modified>2023-08-23T18:45:25.457</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.86\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

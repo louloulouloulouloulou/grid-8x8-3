@@ -16,59 +16,83 @@ namespace grid_8x8_3
         }
         public override List<Movess> Move(Mothaclass[,] array)
         {
-            List<Movess> Moves = new List<Movess> ();
+            Loop(array, 1);
+            Loop(array, -1);
+                    
+
+
+            return Moves;
+        }
+        public void Loop(Mothaclass[,] array, int c)
+        {
+            
+
+            X(array, c);
+            Y(array, c); //() => Y(array, c)
+
+           
+            
+        }
+        public void X(Mothaclass[,] array, int c)
+        {
             for (int i = 1; i < 9; i++)
             {
-                if (IsInArray(position.x + i, position.y) == true)
+                int a = i * c;
+                if (IsInArray(position.x + a, position.y) == true)
                 {
-                    if (array[position.x + i, position.y] == null)
+                    if (array[position.x + a, position.y] == null)
                     {
                         Moves.Add(new Movess(new Position(position.x, position.y),
-                            new Position(position.x + i, position.y), Mtype.Regular));
+                            new Position(position.x + a, position.y), Mtype.Regular));
                     }
                     //capture
-                    if (colour == Colour.White || colour == Colour.Black)
+                    else
                     {
-                        if (array[position.x + i, position.y] != null)
+                        if (array[position.x + a, position.y].colour != colour)
                         {
-                            if(array[position.x + i, position.y].colour != colour)
-                            {
-                                Moves.Add(new Movess(new Position(position.x, position.y),
-                                new Position(position.x + i, position.y), Mtype.Take));
-                            }
-                            else if(array[position.x + i, position.y].colour == colour)
-                            {
-                                break;
-                            }
-                        }                     
-                    }
-                }
-                if (IsInArray(position.x, position.y + i) == true)
-                {
-                    if (array[position.x, position.y + i] == null)
-                    {
-                        Moves.Add(new Movess(new Position(position.x, position.y),
-                            new Position(position.x, position.y + i), Mtype.Regular));
-                    }
-                    //capture
-                    if (colour == Colour.White || colour == Colour.Black)
-                    {
-                        if (array[position.x, position.y + i] != null)
+                            Moves.Add(new Movess(new Position(position.x, position.y),
+                            new Position(position.x + a, position.y), Mtype.Take));
+                            break;
+                        }
+                        else
                         {
-                            if (array[position.x, position.y + i].colour != colour)
-                            {
-                                Moves.Add(new Movess(new Position(position.x, position.y),
-                                new Position(position.x, position.y + i), Mtype.Take));
-                            }
-                            else if (array[position.x, position.y + i].colour == colour)
-                            {
-                                break;
-                            }
+                            break;
                         }
                     }
                 }
             }
-            return Moves;
         }
+        public void Y(Mothaclass[,] array, int c)
+        {
+            for (int i = 1; i < 9; i++)
+            {
+
+                int a = i * c;
+
+                if (IsInArray(position.x, position.y + a) == true)
+                {
+                    if (array[position.x, position.y + a] == null)
+                    {
+                        Moves.Add(new Movess(new Position(position.x, position.y),
+                            new Position(position.x, position.y + a), Mtype.Regular));
+                    }
+                    //capture
+                    else
+                    {
+                        if (array[position.x, position.y + a].colour != colour)
+                        {
+                            Moves.Add(new Movess(new Position(position.x, position.y),
+                            new Position(position.x, position.y + a), Mtype.Take));
+                            break;
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }

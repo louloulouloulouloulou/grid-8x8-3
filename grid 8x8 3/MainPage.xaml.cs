@@ -4,9 +4,9 @@ namespace grid_8x8_3;
 
 public partial class MainPage : ContentPage
 {
-	public Grid biggrid { get; set; }
+    public Grid biggrid { get; set; }
 
-	public Button button1;
+    public Button button1;
 
     public Mothaclass[,] Motha { get; set; }
 
@@ -28,33 +28,35 @@ public partial class MainPage : ContentPage
     ImageSource wking = new FileImageSource { File = "../Resources/Images/wking.png" };
     ImageSource bking = new FileImageSource { File = "../Resources/Images/bking.png" };
 
-    public List<Movess> CurrentListOfMoves {  get; set; }
+    public List<Movess> CurrentListOfMoves { get; set; }
     public MainPage()
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
 
         Array();
 
         Wenumuchuinsama();
-        
-        PaintGrid();
-	}
 
-	private void Wenumuchuinsama()
-	{
-		biggrid = turipipip.CGrid(8, 8);
-		
-		
-		foreach (var child in biggrid.Children)
-		{
-			if (child is Button button)
-			{
-				button.Clicked += GridButton_Click;
-			}
-		}
-        
-		grid_layout1.Children.Add(biggrid);
-	}
+        Squares();
+ 
+        PaintGrid();
+    }
+
+    private void Wenumuchuinsama()
+    {
+        biggrid = turipipip.CGrid(8, 8);
+
+
+        foreach (var child in biggrid.Children)
+        {
+            if (child is Button button)
+            {
+                button.Clicked += GridButton_Click;
+            }
+        }
+
+        grid_layout1.Children.Add(biggrid);
+    }
 
     public void Array()
     {
@@ -68,6 +70,7 @@ public partial class MainPage : ContentPage
                 Motha[6, j] = new Pawn(Colour.White, new Position(6, j));
             }
         }
+
         Motha[0, 1] = new Knight(Colour.Black, new Position(0, 1));
         Motha[0, 6] = new Knight(Colour.Black, new Position(0, 6));
         Motha[7, 1] = new Knight(Colour.White, new Position(7, 1));
@@ -87,7 +90,7 @@ public partial class MainPage : ContentPage
         Motha[7, 7] = new Rook(Colour.White, new Position(7, 7));
 
         Motha[0, 3] = new Queen(Colour.Black, new Position(0, 3));
-        Motha[7, 3] = new Queen(Colour.White, new Position(0, 3));
+        Motha[7, 3] = new Queen(Colour.White, new Position(7, 3));
 
 
     }
@@ -97,7 +100,7 @@ public partial class MainPage : ContentPage
         int brow;
         int bcol;
 
-        foreach (var child in biggrid.Children) 
+        foreach (var child in biggrid.Children)
         {
             if (child is Button button)
             {
@@ -178,27 +181,11 @@ public partial class MainPage : ContentPage
                 }
                 else
                 {
-                    button.Background = new SolidColorBrush(Colors.White);
-
+                    button.ImageSource = "";
                 }
-            } 
-        }
-    }
-    /*
-    public void Array(int[,] ints)
-    {
-        Random rnd = new Random();
-
-
-        for (int i = 0; i < ints.GetLength(0); i++)
-        {
-            for (int j = 0; j < ints.GetLength(1); j++)
-            {
-                ints[i, j] = rnd.Next(0, 2);
             }
         }
     }
-    */
 
     private void GridButton_Click(object sender, EventArgs e)
     {
@@ -215,7 +202,7 @@ public partial class MainPage : ContentPage
 
                     // 1- move the pawn to new position
                     Motha[move.endPosition.x, move.endPosition.y] = Motha[move.startPosition.x, move.startPosition.y];
-                     
+
                     // 2- update the pawn's position
                     Motha[move.endPosition.x, move.endPosition.y].position.x = move.endPosition.x;
                     Motha[move.endPosition.x, move.endPosition.y].position.y = move.endPosition.y;
@@ -228,6 +215,7 @@ public partial class MainPage : ContentPage
 
             button1 = null;
             UnPaintPossibleMoves(CurrentListOfMoves);
+            CurrentListOfMoves.Clear();
             PaintGrid();
         }
         else
@@ -240,11 +228,11 @@ public partial class MainPage : ContentPage
             }
         }
     }
-    private void PaintPossibleMoves(List <Movess> Moves)
+    private void PaintPossibleMoves(List<Movess> Moves)
     {
         int row;
         int col;
-     
+
         foreach (Movess Move in Moves)
         {
             foreach (var child in biggrid.Children)
@@ -258,7 +246,7 @@ public partial class MainPage : ContentPage
                     {
                         if (Move.thing == Mtype.Regular)
                         {
-                            
+
                             button.Background = new SolidColorBrush(Colors.LightGreen);
                         }
                         else
@@ -271,7 +259,7 @@ public partial class MainPage : ContentPage
                     {
                     }
                 }
-            }           
+            }
         }
     }
     private void UnPaintPossibleMoves(List<Movess> Moves)
@@ -292,13 +280,13 @@ public partial class MainPage : ContentPage
                     {
                         if (Move.thing == Mtype.Regular)
                         {
-                            
-                            button.Background = new SolidColorBrush(Colors.White);
+
+                            Squares();
                         }
                         else
                         {
-                            
-                            button.Background = new SolidColorBrush(Colors.White);
+
+                            Squares();
                         }
                     }
                     else
@@ -308,41 +296,44 @@ public partial class MainPage : ContentPage
             }
         }
     }
-    /*
-    private void Button_Clicked(object sender, EventArgs e)
+
+    private void Squares()
     {
-        int[,] array = new int[8, 8];
-        Array(array);
-        Random rnd = new Random();
-        int row;
-        int col;
-
-        int arow;
-        int acol;
-
-
-        do
-        {
-            arow = rnd.Next(0, array.GetLength(0) + 1);
-            acol = rnd.Next(0, array.GetLength(1) + 1);
-        }
-        while (array[arow, acol] != 1);
-
+        int brow;
+        int bcol;
 
         foreach (var child in biggrid.Children)
         {
             if (child is Button button)
             {
-                row = biggrid.GetRow(button);
-                col = biggrid.GetColumn(button);
-                
-                if ((row == arow) && (col == acol))
+                brow = biggrid.GetRow(button);
+                bcol = biggrid.GetColumn(button);
+
+                if (brow % 2 == 0)
                 {
-                    button.Text = "Hello";
-                    button.Background = new SolidColorBrush(Colors.Red);
-                }                  
+                    if(bcol % 2 == 1)
+                    {
+                        button.Background = new SolidColorBrush(Colors.Green);
+                    }
+                    else
+                    {
+                        button.Background = new SolidColorBrush(Colors.White);
+
+                    }
+                }
+                else
+                {
+                    if (bcol % 2 == 1)
+                    {
+                        button.Background = new SolidColorBrush(Colors.White);
+                    }
+                    else
+                    {
+                        button.Background = new SolidColorBrush(Colors.Green);
+
+                    }
+                }
             }
         }
     }
-    */
 }
