@@ -278,16 +278,7 @@ public partial class MainPage : ContentPage
 
                     if (Move.endPosition.x == row && Move.endPosition.y == col)
                     {
-                        if (Move.thing == Mtype.Regular)
-                        {
-
-                            Squares();
-                        }
-                        else
-                        {
-
-                            Squares();
-                        }
+                        Squares();
                     }
                     else
                     {
