@@ -16,7 +16,5 @@ namespace grid_8x8_3
             this.x = x;
             this.y = y;
         }
-
-
     }
 }

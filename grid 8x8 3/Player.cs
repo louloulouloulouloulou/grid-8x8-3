@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace grid_8x8_3
 {
-    internal class Player
+    public class Player
     {
     }
 }
