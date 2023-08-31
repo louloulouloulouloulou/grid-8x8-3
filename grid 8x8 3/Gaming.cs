@@ -1,4 +1,6 @@
 ﻿using grid_8x8_3.Piece_classes;
+using Microsoft.Maui.Controls;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,10 +15,16 @@ namespace grid_8x8_3
         public static Mothaclass[,] Motha { get; set; }
 
         public static Button button1;
+
+
         public static List<Movess> CurrentListOfMoves { get; set; }
+        public static List<Movess> NotCurrentListOfMoves { get; set; }
+        public static List<Movess> KingListOfMoves { get; set; }
 
-        public static List<Mothaclass> whitePieces { get; set; }
 
+
+        public static List<Mothaclass> PiecesB = new List<Mothaclass>();
+        public static List<Mothaclass> PiecesW = new List<Mothaclass>();
         /// <summary>
         /// Inits the game
         /// </summary>
@@ -25,7 +33,7 @@ namespace grid_8x8_3
         {
             Biggrid = turipipip.CGrid(8, 8);
             Motha = new Mothaclass[8, 8];
-
+            
             InitArray(Motha);
             ControlHelper.Wenumuchuinsama(Biggrid, grid_layout1);
             ControlHelper.Squares(Biggrid);
@@ -37,16 +45,8 @@ namespace grid_8x8_3
         /// </summary>
         /// <param name="Motha"></param>
         public static void InitArray(Mothaclass[,] Motha)
-        {         
-            for (int i = 0; i < Motha.GetLength(0); i++)
-            {
-                for (int j = 0; j < Motha.GetLength(1); j++)
-                {
-                    Motha[1, j] = new Pawn(Colour.Black, new Position(1, j));
-                    Motha[6, j] = new Pawn(Colour.White, new Position(6, j));
-                }
-            }
-
+        {
+            
             Motha[0, 1] = new Knight(Colour.Black, new Position(0, 1));
             Motha[0, 6] = new Knight(Colour.Black, new Position(0, 6));
             Motha[7, 1] = new Knight(Colour.White, new Position(7, 1));
@@ -67,53 +67,176 @@ namespace grid_8x8_3
 
             Motha[0, 3] = new Queen(Colour.Black, new Position(0, 3));
             Motha[7, 3] = new Queen(Colour.White, new Position(7, 3));
-        }
 
+            for (int i = 0; i < Motha.GetLength(0); i++)
+            {
+                for (int j = 0; j < Motha.GetLength(1); j++)
+                {
+                    Motha[1, j] = new Pawn(Colour.Black, new Position(1, j));
+                    Motha[6, j] = new Pawn(Colour.White, new Position(6, j));
+                    if (Motha[i, j] != null)
+                    {
+                        if (Motha[i, j].colour == Colour.White)
+                        {
+                            PiecesW.Add(Motha[i, j]);
+                        }
+                        else
+                        {
+                            PiecesB.Add(Motha[i, j]);
+                        }
+                    }
+                }
+            }
+        }
+        public static Player playerW = new Player(Colour.White, PiecesW, false);
+        public static Player playerB = new Player(Colour.Black, PiecesB, true);
+
+        public static string ColorOfKing;
+
+        public static Colour aaaa = Colour.White;
         /// <summary>
         ///  Game's heart whre the real business happens
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public static void GridButton_Click(object sender, EventArgs e)
+        public static async void GridButton_Click(object sender, EventArgs e)
         {
             Button clickedbutton = (Button)sender;
             int row = Biggrid.GetRow(clickedbutton);
             int col = Biggrid.GetColumn(clickedbutton);
 
+            
             if (button1 != null)
             {
                 foreach (Movess move in CurrentListOfMoves)
                 {
+                    
                     if (move.endPosition.x == row && move.endPosition.y == col)
                     {
+                        Movee(move);
+                        /*
+                        if (CheckMated(move) == true)
+                        {
+                            await Application.Current.MainPage.DisplayAlert($"{ColorOfKing}!!!", $"{ColorOfKing} is bad af!!!!", "XD");
+                            break;
+                        }*/
+                        if(IsCheck(move) == true)
+                        {
+                            await Application.Current.MainPage.DisplayAlert("Check Alert", $"{ColorOfKing} king is in check!", "OK");
 
-                        // 1- move the pawn to new position
-                        Motha[move.endPosition.x, move.endPosition.y] = Motha[move.startPosition.x, move.startPosition.y];
+                        }
+                        
+                        
 
-                        // 2- update the pawn's position
-                        Motha[move.endPosition.x, move.endPosition.y].position.x = move.endPosition.x;
-                        Motha[move.endPosition.x, move.endPosition.y].position.y = move.endPosition.y;
+                        if (aaaa == Colour.White)
+                        {
+                            ColorOfKing = "White";
+                            playerW.HasPlayed = true;
+                            aaaa = Colour.Black;
+                        }
+                        else if (aaaa == Colour.Black)
+                        {
+                            ColorOfKing = "Black";
+                            playerB.HasPlayed = true;
+                            aaaa = Colour.White;
+                        }
+                        
+                        
 
-                        // 3- remove the pawn at old position
-                        Motha[move.startPosition.x, move.startPosition.y] = null;
-                        button1.ImageSource = null;
                     }
+                    
                 }
-
+                
                 button1 = null;
                 ControlHelper.UnPaintPossibleMoves(CurrentListOfMoves, Biggrid);
                 CurrentListOfMoves.Clear();
+                
+                if (NotCurrentListOfMoves != null)
+                {
+                    NotCurrentListOfMoves.Clear();
+                }/*
+                if (KingListOfMoves != null)
+                {
+                    KingListOfMoves.Clear();
+                }*/
                 ControlHelper.PaintGrid(Biggrid, Motha);
             }
-            else
+            else 
             {
                 if (Motha[row, col] != null)
                 {
-                    CurrentListOfMoves = Motha[row, col].Move(Motha);
-                    ControlHelper.PaintPossibleMoves(CurrentListOfMoves, Biggrid);
-                    button1 = clickedbutton;
+                    if (Motha[row, col].colour == aaaa)
+                    {
+                        CurrentListOfMoves = Motha[row, col].Move(Motha);
+                        ControlHelper.PaintPossibleMoves(CurrentListOfMoves, Biggrid);
+                        
+                        button1 = clickedbutton;
+
+                        
+                    }
+                }
+                
+            }
+            
+        }
+        public static async void Movee(Movess move)
+        {
+            // 1- move the pawn to new position
+            Motha[move.endPosition.x, move.endPosition.y] = Motha[move.startPosition.x, move.startPosition.y];
+
+
+
+            // 2- update the pawn's position
+            Motha[move.endPosition.x, move.endPosition.y].position.x = move.endPosition.x;
+            Motha[move.endPosition.x, move.endPosition.y].position.y = move.endPosition.y;
+
+            //2.5- TURI IP IP IP
+
+            //aaaa = Motha[move.endPosition.x, move.endPosition.y].colour;
+
+            // 3- remove the pawn at old position
+            Motha[move.startPosition.x, move.startPosition.y] = null;
+            button1.ImageSource = null;
+
+            
+            
+
+        }
+        
+        public static bool IsCheck(Movess move)
+        {
+            
+            NotCurrentListOfMoves = Motha[move.endPosition.x, move.endPosition.y].Move(Motha);
+            foreach (Movess movee in NotCurrentListOfMoves)
+            {
+                if (Motha[movee.endPosition.x, movee.endPosition.y] is King)
+                {
+                    return true;
                 }
             }
+            return false;
+                    
         }
+        /*
+        public static bool CheckMated(Movess move)
+        {
+            if (Motha[move.endPosition.x, move.endPosition.y] is King)
+            {
+                KingListOfMoves = Motha[move.endPosition.x, move.endPosition.y].Moves;
+
+                foreach (Movess kmove in KingListOfMoves)
+                {
+                    if (IsCheck(kmove) == true || Motha[kmove.endPosition.x, kmove.endPosition.y] != null)
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+
+            
+            
+        }*/
+
     }
 }
