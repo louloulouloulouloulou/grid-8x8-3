@@ -19,8 +19,9 @@ namespace grid_8x8_3
 
         public static List<Movess> CurrentListOfMoves { get; set; }
         public static List<Movess> NotCurrentListOfMoves { get; set; }
-        public static List<Movess> KingListOfMoves { get; set; }
+        public static List<Movess> BigAssList { get; set; }
 
+        public static List<Movess> KingList { get; set; }
 
 
         public static List<Mothaclass> PiecesB = new List<Mothaclass>();
@@ -35,6 +36,8 @@ namespace grid_8x8_3
             Motha = new Mothaclass[8, 8];
             
             InitArray(Motha);
+            Refresh();
+
             ControlHelper.Wenumuchuinsama(Biggrid, grid_layout1);
             ControlHelper.Squares(Biggrid);
             ControlHelper.PaintGrid(Biggrid, Motha);
@@ -74,6 +77,17 @@ namespace grid_8x8_3
                 {
                     Motha[1, j] = new Pawn(Colour.Black, new Position(1, j));
                     Motha[6, j] = new Pawn(Colour.White, new Position(6, j));
+                } 
+            }
+            Refresh();
+                    
+        }
+        public static void Refresh()
+        {
+            for (int i = 0; i < Motha.GetLength(0); i++)
+            {
+                for (int j = 0; j < Motha.GetLength(1); j++)
+                {
                     if (Motha[i, j] != null)
                     {
                         if (Motha[i, j].colour == Colour.White)
@@ -88,6 +102,7 @@ namespace grid_8x8_3
                 }
             }
         }
+        
         public static Player playerW = new Player(Colour.White, PiecesW, false);
         public static Player playerB = new Player(Colour.Black, PiecesB, true);
 
@@ -102,6 +117,8 @@ namespace grid_8x8_3
         public static async void GridButton_Click(object sender, EventArgs e)
         {
             Button clickedbutton = (Button)sender;
+            Refresh();
+
             int row = Biggrid.GetRow(clickedbutton);
             int col = Biggrid.GetColumn(clickedbutton);
 
@@ -110,7 +127,7 @@ namespace grid_8x8_3
             {
                 foreach (Movess move in CurrentListOfMoves)
                 {
-                    
+
                     if (move.endPosition.x == row && move.endPosition.y == col)
                     {
                         Movee(move);
@@ -120,28 +137,25 @@ namespace grid_8x8_3
                             await Application.Current.MainPage.DisplayAlert($"{ColorOfKing}!!!", $"{ColorOfKing} is bad af!!!!", "XD");
                             break;
                         }*/
-                        if(IsCheck(move) == true)
+                        if (IsCheck(move) == true)
                         {
                             await Application.Current.MainPage.DisplayAlert("Check Alert", $"{ColorOfKing} king is in check!", "OK");
+                            
 
                         }
-                        
-                        
-
                         if (aaaa == Colour.White)
                         {
                             ColorOfKing = "White";
                             playerW.HasPlayed = true;
                             aaaa = Colour.Black;
-                        }
+                        } 
                         else if (aaaa == Colour.Black)
                         {
                             ColorOfKing = "Black";
                             playerB.HasPlayed = true;
                             aaaa = Colour.White;
                         }
-                        
-                        
+                        break;
 
                     }
                     
@@ -155,9 +169,9 @@ namespace grid_8x8_3
                 {
                     NotCurrentListOfMoves.Clear();
                 }/*
-                if (KingListOfMoves != null)
+                if (BigAssList != null)
                 {
-                    KingListOfMoves.Clear();
+                    BigAssList.Clear();
                 }*/
                 ControlHelper.PaintGrid(Biggrid, Motha);
             }
@@ -181,6 +195,8 @@ namespace grid_8x8_3
         }
         public static async void Movee(Movess move)
         {
+            
+
             // 1- move the pawn to new position
             Motha[move.endPosition.x, move.endPosition.y] = Motha[move.startPosition.x, move.startPosition.y];
 
@@ -205,37 +221,75 @@ namespace grid_8x8_3
         
         public static bool IsCheck(Movess move)
         {
-            
-            NotCurrentListOfMoves = Motha[move.endPosition.x, move.endPosition.y].Move(Motha);
-            foreach (Movess movee in NotCurrentListOfMoves)
+
+            List<Mothaclass> Pieces = new List<Mothaclass>();
+            if (aaaa == Colour.White)
             {
-                if (Motha[movee.endPosition.x, movee.endPosition.y] is King)
-                {
-                    return true;
-                }
+                Pieces = PiecesW;
             }
-            return false;
-                    
-        }
-        /*
-        public static bool CheckMated(Movess move)
-        {
+            if (aaaa == Colour.Black)
+            {
+                Pieces = PiecesB;
+            }
+            foreach (Mothaclass piece in Pieces)
+            {
+                BigAssList = piece.Move(Motha);
+            }
+
             if (Motha[move.endPosition.x, move.endPosition.y] is King)
             {
-                KingListOfMoves = Motha[move.endPosition.x, move.endPosition.y].Moves;
+                KingList = Motha[move.endPosition.x, move.endPosition.y].Moves;
 
-                foreach (Movess kmove in KingListOfMoves)
+                foreach (Movess bmove in BigAssList)
                 {
-                    if (IsCheck(kmove) == true || Motha[kmove.endPosition.x, kmove.endPosition.y] != null)
+                    foreach (Movess kmove in KingList)
                     {
-                        return true;
+                        if (Motha[bmove.endPosition.x, bmove.endPosition.y] == Motha[kmove.endPosition.x, kmove.endPosition.y])
+                        {
+                            return true;
+                        }
                     }
                 }
             }
             return false;
 
-            
-            
+        }
+        /*
+        public static bool CheckMated(Movess move)
+        {
+            List<Mothaclass> Pieces = new List<Mothaclass>();
+            if (aaaa == Colour.White)
+            {
+                Pieces = PiecesW;
+            }
+            if (aaaa == Colour.Black)
+            {
+                Pieces = PiecesB;
+            }
+            foreach (Mothaclass piece in Pieces)
+            {
+                BigAssList = piece.Move(Motha);
+            }
+
+            if (Motha[move.endPosition.x, move.endPosition.y] is King)
+            {
+                KingList = Motha[move.endPosition.x, move.endPosition.y].Moves;
+
+                foreach (Movess bmove in BigAssList)
+                {
+                    foreach(Movess kmove in KingList)
+                    {
+                        if (Motha[bmove.endPosition.x, bmove.endPosition.y] == Motha[kmove.endPosition.x, kmove.endPosition.y])
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+
+
+        
         }*/
 
     }
