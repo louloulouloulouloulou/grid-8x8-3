@@ -22,6 +22,10 @@ namespace grid_8x8_3.Piece_classes
         {
             return Moves;
         }
+        public virtual List<Movess> UnlockedMove(Mothaclass[,] array) // move
+        {
+            return Moves;
+        }
         public bool IsInArray(int x, int y)
         {
             if (x < 0 || x > 7 || y < 0 || y > 7)

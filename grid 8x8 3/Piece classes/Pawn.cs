@@ -79,5 +79,60 @@ namespace grid_8x8_3
             }
             return Moves;
         }
+        public override List<Movess> UnlockedMove(Mothaclass[,] array)
+        {
+            // movement of black pawn
+
+            List<Movess> Moves = new List<Movess>(); // list for the moves of the pawns
+
+            if (colour == Colour.Black)
+            {
+
+                // capturing
+                if (IsInArray(position.x + 1, position.y - 1) == true)
+                {
+                    if (array[position.x + 1, position.y - 1] == null)
+                    {
+                        Moves.Add(new Movess(new Position(position.x, position.y), new Position(position.x + 1, position.y - 1), Mtype.Take));
+
+                    }
+                }
+                if (IsInArray(position.x + 1, position.y + 1) == true)
+                {
+                    if (array[position.x + 1, position.y + 1] == null)
+                    {
+                        Moves.Add(new Movess(new Position(position.x, position.y), new Position(position.x + 1, position.y + 1), Mtype.Take));
+
+                    }
+                }
+            }
+            // movement of white pawn
+
+            if (colour == Colour.White)
+            {
+                // capturing
+
+                if (IsInArray(position.x - 1, position.y - 1) == true)
+                {
+
+                    if (array[position.x - 1, position.y - 1] == null)
+                    {
+                        Moves.Add(new Movess(new Position(position.x, position.y), new Position(position.x - 1, position.y - 1), Mtype.Take));
+
+                    }
+                }
+                if (IsInArray(position.x - 1, position.y + 1) == true)
+                {
+                    if (array[position.x - 1, position.y + 1] == null)
+                    {
+                        Moves.Add(new Movess(new Position(position.x, position.y), new Position(position.x - 1, position.y + 1), Mtype.Take));
+
+                    }
+                }
+
+            }
+            return Moves;
+
+        }
     }
 }

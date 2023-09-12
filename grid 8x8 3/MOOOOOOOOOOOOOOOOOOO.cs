@@ -20,5 +20,6 @@ namespace grid_8x8_3
             this.endPosition = endPosition;
             this.thing = thing;
         }
+
     }
 }

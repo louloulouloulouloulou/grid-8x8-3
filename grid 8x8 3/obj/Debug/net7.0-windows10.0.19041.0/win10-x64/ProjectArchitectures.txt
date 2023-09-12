@@ -1,1 +1,1 @@
-C:\Users\Lourenço\source\repos\grid 8x8 3\grid 8x8 3\grid 8x8 3.csproj;x64
+C:\Users\user\Desktop\projet c#\grid-8x8-3\grid 8x8 3\bin\Debug\net7.0-windows10.0.19041.0\grid 8x8 3\grid 8x8 3.csproj;x64

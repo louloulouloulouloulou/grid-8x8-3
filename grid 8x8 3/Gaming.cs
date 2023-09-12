@@ -84,6 +84,9 @@ namespace grid_8x8_3
         }
         public static void Refresh()
         {
+            PiecesW.Clear();
+            PiecesB.Clear();
+
             for (int i = 0; i < Motha.GetLength(0); i++)
             {
                 for (int j = 0; j < Motha.GetLength(1); j++)
@@ -137,12 +140,11 @@ namespace grid_8x8_3
                             await Application.Current.MainPage.DisplayAlert($"{ColorOfKing}!!!", $"{ColorOfKing} is bad af!!!!", "XD");
                             break;
                         }*/
-                        if (IsCheck(move) == true)
-                        {
-                            await Application.Current.MainPage.DisplayAlert("Check Alert", $"{ColorOfKing} king is in check!", "OK");
-                            
+                        //if (IsCheck(move) == true)
+                        //{
+                        //    await Application.Current.MainPage.DisplayAlert("Check Alert", $"{ColorOfKing} king is in check!", "OK");
+                        //}
 
-                        }
                         if (aaaa == Colour.White)
                         {
                             ColorOfKing = "White";
